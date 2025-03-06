@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>PASSWORD GENERATOR</title>
+</head>
+<body class="bg-[#222] min-h-screen flex items-center justify-center  ">
+    <div class="bg-slate-800 flex flex-col items-center justify-center p-4 rounded-lg ">
+        <div class="flex">
+            <h1 class="text-amber-300 font-serif mb-5 text-center text-2xl">Password Generator</h1>
+        </div>
+        <div class=" flex  gap-2 items-center justify-center mt-10 ">
+            <input type="text" class="rounded-sm text-center p-0 mr-1 font-serif " id="input">
+            <button class="text-center bg-white rounded-sm" id="copypassword"><img src="./assest/copy2.png" alt=""></button>
+            <button class="text-white px-2 py-1  font-serif " id="showPassword">show</button>
+        </div>
+        <div class="flex mt-2 items-center justify-center flex-col  ">
+            <div class="flex items-center justify-center m-2 ">
+                <input type="range" min="4" max="16" id="slider" class="m-4">
+                <div class="m-2 flex gap-1 ">
+                    <label for="Number" class="text-white  ">Numbers : </label>
+                    <input type="checkbox" id="containNumbers">
+                </div>
+                <div class="m-2 flex gap-1">
+                    <label for="character" class="text-white">Characters : </label>
+                    <input type="checkbox" id="containCharacters">
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="bg-green-600 text-white font-serif p-2 rounded-sm text-center text-sm  " id="generate" >generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
