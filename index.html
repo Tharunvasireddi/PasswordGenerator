@@ -7,15 +7,15 @@
     <title>PASSWORD GENERATOR</title>
 </head>
 <body class="bg-[#222] min-h-screen flex items-center justify-center ">
-    <div class="bg-slate-800 flex flex-col items-center justify-center   rounded-lg w-full max-w-md">
-        <h1 class="text-amber-300 font-serif mb-5 text-center text-2xl p-4">Password Generator</h1>
+    <div class="bg-slate-800 flex flex-col items-center justify-center sm:p-4 md:p-4 rounded-lg w-full max-w-2xl md:max-w-3xl">
+        <h1 class="text-amber-300 font-serif mb-5 text-center text-2xl p-4 sm:text-3xl md:text-4xl">Password Generator</h1>
         
-        <div class="flex  sm:flex-row gap-2 items-center justify-center w-full p-4 ">
+        <div class="flex  sm:flex-row md:flex-row gap-2 items-center justify-center ">
             <input type="text" class="rounded-sm text-center p-2 w-full sm:w-auto font-serif cursor-none" id="input">
             <button class="text-center bg-white rounded-sm p-2" id="copypassword">
                 <img src="./src/assest/copy2.png" alt="Copy">
             </button>
-            <button class="text-white px-4 py-2 rounded-sm font-serif" id="showPassword">Show</button>
+            <button class="text-white px-4 py-2 rounded-lg  font-serif bg-gray-700 hover:bg-slate-900  " id="showPassword">Show</button>
         </div>
         
         <div class="flex flex-col sm:flex-row mt-4 items-center justify-center gap-4 w-full">
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <button class="bg-green-600 text-white font-serif p-2 mb-4 rounded-sm text-center text-sm mt-4 w-full sm:w-auto" id="generate">Generate</button>
+        <button class="bg-green-600 text-white font-serif p-2 mb-4 rounded-sm text-center text-sm mt-4  sm:w-auto" id="generate">Generate</button>
     </div>
 
     <script src="./src/index.js"></script>
