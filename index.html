@@ -6,28 +6,36 @@
     <link href="./src/output.css" rel="stylesheet">
     <title>PASSWORD GENERATOR</title>
 </head>
-<body class="bg-[#222] min-h-screen flex items-center justify-center  ">
-    <div class="bg-slate-800 flex flex-col items-center justify-center p-4 rounded-lg ">
-        <div class="flex">
-            <h1 class="text-amber-300 font-serif mb-5 text-center text-2xl">Password Generator</h1>
+<body class="bg-[#222] min-h-screen flex items-center justify-center ">
+    <div class="bg-slate-800 flex flex-col items-center justify-center   rounded-lg w-full max-w-md">
+        <h1 class="text-amber-300 font-serif mb-5 text-center text-2xl p-4">Password Generator</h1>
+        
+        <div class="flex  sm:flex-row gap-2 items-center justify-center w-full p-4 ">
+            <input type="text" class="rounded-sm text-center p-2 w-full sm:w-auto font-serif cursor-none" id="input">
+            <button class="text-center bg-white rounded-sm p-2" id="copypassword">
+                <img src="./src/assest/copy2.png" alt="Copy">
+            </button>
+            <button class="text-white px-4 py-2 rounded-sm font-serif" id="showPassword">Show</button>
         </div>
-        <div class=" flex  gap-2 items-center justify-center mt-10 ">
-            <input type="text" class="rounded-sm text-center p-0 mr-1 font-serif cursor-none" id="input">
-            <button class="text-center bg-white rounded-sm" id="copypassword"><img src="./src/assest/copy2.png" alt=""></button>
-            <button class="text-white px-2 py-1  font-serif " id="showPassword">show</button>
-        </div>
-        <div class="flex mt-2 items-center justify-center gap-2  ">
-                <input type="range" min="4" max="16" id="slider" class="m-4">
-                    <label for="containNumbers" class="text-white  ">Numbers : </label>
-                    <input type="checkbox" id="containNumbers">
-                    <label for="containCharacters" class="text-white">Characters : </label>
-                    <input type="checkbox" id="containCharacters">
+        
+        <div class="flex flex-col sm:flex-row mt-4 items-center justify-center gap-4 w-full">
+            <div class="flex items-center gap-2">
+                <label for="slider" class="text-white">Length:</label>
+                <input type="range" min="4" max="16" id="slider" class="w-full sm:w-auto">
             </div>
-            <div class="flex items-center justify-center">
-                <button class="bg-green-600 text-white font-serif p-2 rounded-sm text-center text-sm  " id="generate" >generate</button>
+            <div class="flex items-center gap-2">
+                <label for="containNumbers" class="text-white">Numbers:</label>
+                <input type="checkbox" id="containNumbers">
+            </div>
+            <div class="flex items-center gap-2">
+                <label for="containCharacters" class="text-white">Characters:</label>
+                <input type="checkbox" id="containCharacters">
             </div>
         </div>
+
+        <button class="bg-green-600 text-white font-serif p-2 mb-4 rounded-sm text-center text-sm mt-4 w-full sm:w-auto" id="generate">Generate</button>
     </div>
+
     <script src="./src/index.js"></script>
 </body>
 </html>
